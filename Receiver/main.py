@@ -20,6 +20,14 @@ try:
                                                                 # (soquete de rede)
 except:
   import socket
+  
+#-------------------------------------------------Definição do gerenciador de energia-----------------------------------------------
+
+axp = axp202.PMU(address=axp202.AXP192_SLAVE_ADDRESS)
+axp.setLDO2Voltage(3300)                                        # T-Beam LORA VDD   3v3
+axp.setLDO3Voltage(3300)                                        # T-Beam GPS  VDD    3v3
+axp.enablePower(axp202.AXP192_LDO3)
+axp.enablePower(axp202.AXP192_LDO2)
 
 #-------------------------------------------------------Configuração de rede-------------------------------------------------------
 
