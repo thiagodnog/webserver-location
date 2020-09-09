@@ -165,7 +165,7 @@ def web_page():                                                    # Cria uma p√
     <span class="dht-labels">Longitude</span>
     <span>"""+dadosOrganizados(dados,'longitude')+"""</span>
   </p>
-  <img src="https://maps.googleapis.com/maps/api/staticmap?center=-8.118288,-34.910167&zoom=17&size=400x400&markers=color:blue%7Clabel:C%7C-8.118288,-34.910167&key=YOUR_API_KEY">
+  <img src="https://maps.googleapis.com/maps/api/staticmap?center="""+dadosOrganizados(dados,'latitude')+""","""+dadosOrganizados(dados,'longitude')+"""&zoom=17&size=400x400&markers=color:blue%7Clabel:C%7C"""+dadosOrganizados(dados,'latitude')+""","""+dadosOrganizados(dados,'longitude')+"""&key=YOUR_API_KEY">
 </body>
 </html>"""
   return html
