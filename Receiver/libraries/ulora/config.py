@@ -1,4 +1,4 @@
-# ESP32 TTGO v1.0 
+# ESP32 TTGO T-Beam v1.0 
 device_config = {
     'miso':19,
     'mosi':27,
