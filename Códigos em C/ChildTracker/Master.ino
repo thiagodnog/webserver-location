@@ -139,7 +139,7 @@ void loop(){
                               "var marker = new google.maps.Marker({position: child, map: map});}"
                            "</script>"
                            "<script async defer "
-                           "src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBYW3OTD8PgQ7aQhiHmmYOm1CBZFn-K0Hs&callback=initMap'>"
+                           "src='https://maps.googleapis.com/maps/api/js?key=SUA_KEY'>"
                            "</script>");
   
   
